@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroIsometric from '../../assets/hero-isometric.png';
 import { useToast } from '../../components/Toast/Toast.jsx';
+import AccountMenu from '../../components/AccountMenu/AccountMenu.jsx';
 import './Landing.css';
 
 export default function Landing() {
@@ -56,11 +57,17 @@ export default function Landing() {
               <span className="land-cta-pill__dot" />
               <span>Enter Live Dashboard</span>
             </a>
-            <div className="land-avatar">
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
-                person
-              </span>
-            </div>
+            <AccountMenu
+              name="Dr. S. Kulkarni"
+              role="Duty Dispatcher · Andheri West"
+              trigger={
+                <div className="land-avatar">
+                  <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                    person
+                  </span>
+                </div>
+              }
+            />
           </div>
         </div>
       </header>

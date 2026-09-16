@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useRequests } from '../../context/RequestsContext.jsx';
+import AccountMenu from '../AccountMenu/AccountMenu.jsx';
 
 export default function OpsHeader() {
   const navigate = useNavigate();
@@ -51,14 +52,20 @@ export default function OpsHeader() {
           <div className="ops-station-pill">
             <span>Andheri West Node DISPATCH #882</span>
           </div>
-          <div className="ops-header__profile">
-            <div className="ops-badge-sk">SK</div>
-            <div className="ops-avatar">
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
-                person
-              </span>
-            </div>
-          </div>
+          <AccountMenu
+            name="Dr. S. Kulkarni"
+            role="Duty Dispatcher · Andheri West"
+            trigger={
+              <div className="ops-header__profile">
+                <div className="ops-badge-sk">SK</div>
+                <div className="ops-avatar">
+                  <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                    person
+                  </span>
+                </div>
+              </div>
+            }
+          />
         </div>
       </div>
     </header>

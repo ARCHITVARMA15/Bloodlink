@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useRequests } from '../../context/RequestsContext.jsx';
 import { useToast } from '../../components/Toast/Toast.jsx';
+import AccountMenu from '../../components/AccountMenu/AccountMenu.jsx';
 import './Dashboard.css';
 
 function formatHMS(totalSeconds) {
@@ -135,7 +136,11 @@ export default function Dashboard() {
             <span className="dash-station__name">Andheri West Node</span>
             <span className="dash-station__id">DISPATCH #882</span>
           </div>
-          <div className="dash-avatar">SK</div>
+          <AccountMenu
+            name="Dr. S. Kulkarni"
+            role="Duty Dispatcher · Andheri West"
+            trigger={<div className="dash-avatar">SK</div>}
+          />
         </div>
       </header>
 

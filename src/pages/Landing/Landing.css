@@ -389,7 +389,6 @@
 
 .land-hero__title-accent {
   color: var(--land-secondary);
-  text-decoration: underline wavy rgba(255, 179, 172, 0.3);
 }
 
 .land-hero__subtitle {
