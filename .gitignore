@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Design reference material (code.html / DESIGN.md / screen.png per page) —
+# used to build the app but not needed at build/runtime. The one asset the
+# app actually imports (hero backdrop) is copied into src/assets/ and stays
+# tracked there.
+/landing_page/
+/dashboard/
+/alerts/
+/mobile/
+/transparency/
+/3d_backdrop.png
